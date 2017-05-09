@@ -9,6 +9,7 @@ RUN git clone https://github.com/akveo/ng2-admin.git /var/www \
     && npm run prebuild:prod && npm run build:prod
 
 EXPOSE 8080
+EXPOSE 80
 
 WORKDIR /var/www
 ENTRYPOINT ["npm", "run", "server:prod"]
